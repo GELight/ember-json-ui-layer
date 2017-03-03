@@ -11,6 +11,18 @@ export default Ember.Component.extend({
   content: null,
 
   /**
+   * Method to prepare all needed component related data
+   *
+   * @method didReceiveAttrs
+   * @returns none
+   */
+  didReceiveAttrs() {
+
+    // ...
+
+  },
+
+  /**
    * Defines all action methods for this component
    *
    * @property {object} actions
