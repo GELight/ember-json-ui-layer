@@ -1,0 +1,11 @@
+
+//
+// UI LAYER
+
+.ui-layer {
+	margin: $space-default * 2;
+	padding: $space-default * 2;
+	background: lighten($body-bg, 100%);
+	@include border-all();
+	@include shadow();
+}

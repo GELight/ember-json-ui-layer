@@ -1,0 +1,16 @@
+
+//
+// Global
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  background-color: $body-bg;
+  font-size: $text-fontSize-default;
+}

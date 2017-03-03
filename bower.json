@@ -1,5 +1,6 @@
 {
   "name": "ember-json-ui-layer",
   "dependencies": {
+    "bootstrap": "~v4.0.0-alpha.2"
   }
 }
