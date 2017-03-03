@@ -1,6 +1,8 @@
 <div class="ui-layer">
 
-	
+	{{#each components as |component|}}
+		{{component.type}}<br/>
+	{{/each}}
 
 	{{yield}}
 </div>

@@ -3,12 +3,12 @@ import Ember from 'ember';
 export default Ember.Component.extend({
 
   /**
-   * Defines the content data of this ui layer
+   * Defines the content data of this ui layer with all components to be render
    *
-   * @property {object} content
+   * @property {object} components
    * @default null
    */
-  content: null,
+  components: null,
 
   /**
    * Method to prepare all needed component related data
