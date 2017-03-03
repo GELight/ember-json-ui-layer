@@ -4,14 +4,16 @@ export default Ember.Route.extend({
 
   model() {
     return Ember.RSVP.hash({
-      components: [
+      type: 'ui-section',
+      childs: [
         {
-          type: 'section',
-          childs: []
-        },
-        {
-          type: 'section',
-          childs: []
+          type: 'ui-section',
+          childs: [
+            {
+              type: 'ui-section',
+              childs: []
+            }
+          ]
         }
       ]
     });

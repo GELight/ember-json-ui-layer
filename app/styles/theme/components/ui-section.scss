@@ -1,0 +1,21 @@
+
+//
+// ui-section
+
+section {
+	position: relative;
+	margin: $space-default * 2;
+	padding: $space-default * 2;
+	background: lighten($body-bg, 100%);
+	@include border-all();
+	@include shadow();
+	
+	> .content-type {
+		position: absolute;
+		top: 0;
+		left: $space-default;
+		background: #ddd;
+		padding: 0 $space-default;
+	}
+
+}

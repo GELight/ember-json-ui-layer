@@ -245,32 +245,18 @@
 
 //
 // Debugging
-.ish-layout-debug {
-
-	$debug-space: .2em;
-	$debug-opacity: .8;
-	$debug-border: 1px dashed black;
-
-	margin: $debug-space;
-	border: $debug-border;
-	@include opacity($debug-opacity);
-
+.debug {
+	background-color: rgba(230,80,35,.8) !important;
+  
 	> * {
-		margin: $debug-space;
-		border: $debug-border;
-		@include opacity($debug-opacity);
-	}
+		background-color: rgba(222,189,139,.8) !important;
+    @include border-all(#000);
 
-  .ish-layout {
-		margin: $debug-space;
-		border: $debug-border;
-		@include opacity($debug-opacity);
-
-		> * {
-			margin: $debug-space;
-			@include opacity($debug-opacity);
-		}
-
+    > * {
+      background-color: rgba(222,189,139,.8) !important;
+      @include border-all(#000);
+    }
+    
   }
 
 }

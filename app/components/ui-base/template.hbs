@@ -1,0 +1,12 @@
+<div class="ui-base">
+	{{#if debug}}
+		<small class="content-type">{{content.type}}</small>
+	{{/if}}
+	
+	{{#each childs as |component|}}
+		{{component component.type content=component}}
+	{{/each}}
+
+	{{yield}}
+	
+</div>
