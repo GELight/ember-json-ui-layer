@@ -1,7 +1,7 @@
 <div class="ui-base">
 
 	{{#each childs as |component|}}
-		{{component component.type content=component}}
+		{{component component.type data=component}}
 	{{/each}}
 	
 	{{yield}}

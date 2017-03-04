@@ -5,10 +5,10 @@ export default Ember.Component.extend({
   /**
    * Defines the general content data of this component
    *
-   * @property {object} content
+   * @property {object} data
    * @default null
    */
-  content: null,
+  data: null,
 
   /**
    * Defines the child component list of this component to be render
@@ -25,7 +25,7 @@ export default Ember.Component.extend({
 
     return null;
   }),
-  
+
   /**
    * Defines a debugging flag to render some internal component information
    *
