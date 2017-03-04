@@ -15,10 +15,10 @@ $base-color: #2d343a;									// ( Grey )
 
 $color-default:	  	$base-color;   	  // Default ( Base )
 $color-primary:	  	$brand-primary;   // Primary
-$color-info:      	$color-default;		// Info
-$color-success:	  	$color-default;		// Success
-$color-warning:	  	$color-default;		// Warning
-$color-danger:    	$color-default;		// Danger
+$color-info:      	$brand-info;		// Info
+$color-success:	  	$brand-success;		// Success
+$color-warning:	  	$brand-warning;		// Warning
+$color-danger:    	$brand-danger;		// Danger
 $color-highlighted:	#51AFC7;
 
 //

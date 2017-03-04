@@ -25,14 +25,14 @@ export default Ember.Component.extend({
 
     return null;
   }),
-
+  
   /**
    * Defines a debugging flag to render some internal component information
    *
    * @property {boolean} debug
    * @default false
    */
-  debug: true,
+  debug: false,
   
   /**
    * Defines all action methods for this component

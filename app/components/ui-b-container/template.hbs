@@ -1,9 +1,9 @@
-<div class="ui-base">
-
-	{{#each childs as |component|}}
+<div class="container">
+  
+  {{#each childs as |component|}}
 		{{component component.type content=component}}
 	{{/each}}
 	
 	{{yield}}
-	
+  
 </div>
