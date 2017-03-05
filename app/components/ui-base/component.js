@@ -16,9 +16,14 @@ export default Ember.Component.extend({
    * @property {object} childs Computed property based on property 'content'.
    * @default null
    */
-  childs: Ember.computed('content', function() {
+  childs: Ember.computed('data', function() {
     let c = this.get('content');
     
+    // Set all properties
+    if (c && c.props && !Ember.isEmpty(c.props)) {  
+      //this.setProperties(c.props);
+    }
+
     if (!Ember.isEmpty(c) && !Ember.isEmpty(c.childs)) {
       return c.childs;
     }
