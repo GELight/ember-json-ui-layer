@@ -22,7 +22,7 @@ export default Ember.Component.extend({
     if (!Ember.isEmpty(c) && !Ember.isEmpty(c.children)) {
       return c.children;
     }
-
+    
     return null;
   }),
 
