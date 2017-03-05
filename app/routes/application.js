@@ -6,48 +6,83 @@ export default Ember.Route.extend({
     return Ember.RSVP.hash({
       type: 'ui-b-container',
       props: {
-        fluid: true,
-        test: {
-          muh: 'kuh'
-        }
+        fluid: true
       },
-      childs: [
+      children: [
         {
           type: 'ui-section',
-          childs: [
+          children: [
             {
               type: 'ui-section',
-              childs: [
+              children: [
                 {
-                  type: 'ui-section',
-                  childs: []
+                  type: 'ui-section'
                 },
                 {
-                  type: 'ui-section',
-                  childs: []
+                  type: 'ui-section'
                 }
               ]
             },
             {
               type: 'ui-section',
-              childs: []
-            },
-            {
-              type: 'ui-section',
-              childs: [
+              children: [
                 {
-                  type: 'ui-section',
-                  childs: []
+                  type: 'ui-b-button',
+                  props: {
+                    style: "primary",
+                    title: "Button 1"
+                  },
+                },
+                {
+                  type: 'ui-b-button',
+                  props: {
+                    style: "info",
+                    title: "Button 2"
+                  },
                 }
               ]
             },
             {
               type: 'ui-section',
-              childs: []
+              children: [
+                {
+                  type: 'ui-section'
+                },
+                {
+                  type: 'ui-b-button',
+                  props: {
+                    style: "success",
+                    title: "Muh"
+                  },
+                },
+                {
+                  type: 'ui-b-button',
+                  props: {
+                    style: "success",
+                    title: "Muh"
+                  },
+                },
+                {
+                  type: 'ui-b-button',
+                  props: {
+                    style: "success",
+                    title: "Muh"
+                  },
+                },
+                {
+                  type: 'ui-b-button',
+                  props: {
+                    style: "success",
+                    title: "Muh"
+                  },
+                }
+              ]
             },
             {
-              type: 'ui-section',
-              childs: []
+              type: 'ui-section'
+            },
+            {
+              type: 'ui-section'
             }
           ]
         }

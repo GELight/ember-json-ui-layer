@@ -1,9 +1,7 @@
-<div class="container{{if fluid '-fluid'}}">
+<div class="container{{if data.props.fluid '-fluid'}}">
   
-  {{#each childs as |component|}}
+  {{#each children as |component|}}
 		{{component component.type data=component}}
 	{{/each}}
-	
-	{{yield}}
   
 </div>

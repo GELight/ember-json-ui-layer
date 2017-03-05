@@ -1,9 +1,7 @@
 <section>
 	
-  {{#each childs as |component|}}
-		{{component component.type content=component}}
+  {{#each children as |component|}}
+		{{component component.type data=component}}
 	{{/each}}
-	
-	{{yield}}
   
 </section>

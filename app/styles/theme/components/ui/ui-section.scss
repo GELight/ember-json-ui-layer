@@ -3,5 +3,9 @@
 // ui-section
 
 section {
-	padding: $space-default;
+	background: lighten($body-bg, 100%);
+  padding: $space-default;
+	margin: $space-default;
+  @include shadow();
+  @include border-all();
 }
