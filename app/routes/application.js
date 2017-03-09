@@ -4,85 +4,56 @@ export default Ember.Route.extend({
 
   model() {
     return Ember.RSVP.hash({
-      type: 'ui-b-container',
+      type: 'ui-b-layout-container',
       attr: {
         fluid: true
       },
       children: [
         {
-          type: 'ui-section',
+          type: 'ui-layout-section',
           children: [
             {
-              type: 'ui-section',
+              type: 'ui-layout-section',
               children: [
                 {
-                  type: 'ui-section'
-                },
-                {
-                  type: 'ui-section'
+                  type: 'ui-b-layout-grid',
+                  attr: {
+                    col: 'row'
+                  },
+                  children: [
+                    {
+                      type: 'ui-b-layout-grid',
+                      attr: {
+                        col: 'col-md-6'
+                      },
+                      children: [
+                        {
+                          type: 'ui-b-button',
+                          attr: {
+                            style: "info",
+                            title: "Button"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      type: 'ui-b-layout-grid',
+                      attr: {
+                        col: 'col-md-6'
+                      },
+                      children: [
+                        {
+                          type: 'ui-b-button',
+                          attr: {
+                            style: "info",
+                            title: "Button"
+                          }
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
-            },
-            {
-              type: 'ui-section',
-              children: [
-                {
-                  type: 'ui-b-button',
-                  attr: {
-                    style: "primary",
-                    title: "Button 1"
-                  },
-                },
-                {
-                  type: 'ui-b-button',
-                  attr: {
-                    style: "info",
-                    title: "Button 2"
-                  },
-                }
-              ]
-            },
-            {
-              type: 'ui-section',
-              children: [
-                {
-                  type: 'ui-section'
-                },
-                {
-                  type: 'ui-b-button',
-                  attr: {
-                    style: "success",
-                    title: "Muh"
-                  },
-                },
-                {
-                  type: 'ui-b-button',
-                  attr: {
-                    style: "success",
-                    title: "Muh"
-                  },
-                },
-                {
-                  type: 'ui-b-button',
-                  attr: {
-                    style: "success",
-                    title: "Muh"
-                  },
-                },
-                {
-                  type: 'ui-b-button',
-                  attr: {
-                    style: "success",
-                    title: "Muh"
-                  },
-                }
-              ]
-            },
-            {
-              type: 'ui-section'
-            },
-            {
-              type: 'ui-section'
             }
           ]
         }
