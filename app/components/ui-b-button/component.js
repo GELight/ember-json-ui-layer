@@ -1,13 +1,22 @@
-import Ember from 'ember';
+import uiBase from './../ui-base/component';
 
-export default Ember.Component.extend({
+export default uiBase.extend({
+  
+  /**
+   * Removes the ember-view element of the component template
+   * 
+   * @property tagName
+   * @default div
+   */
   tagName: '',
 
+  /**
+   * Defines all action methods for this component
+   *
+   * @property {object} actions
+   * @default {}
+   */
   actions: {
-
-    click() {
-      this.set('data.props.title', 'clicked...');
-    }
 
   }
 

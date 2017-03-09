@@ -25,7 +25,7 @@ export default Ember.Component.extend({
     
     return null;
   }),
-
+  
   /**
    * Defines a debugging flag to render some internal component information
    *
@@ -33,6 +33,24 @@ export default Ember.Component.extend({
    * @default false
    */
   debug: false,
+
+  /**
+   * Set all 
+   * 
+   * @method didReceiveAttrs
+   * @returns none
+   */
+  didReceiveAttrs() {
+    this._super(...arguments);
+    
+    let attr = this.get('data.attr');
+
+    Ember.$.each(attr, (index, attr) => {
+      console.log(index, attr);
+      this.set(index, attr);
+    });
+    
+  },
   
   /**
    * Defines all action methods for this component

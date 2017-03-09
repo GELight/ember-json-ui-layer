@@ -5,7 +5,7 @@ export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
       type: 'ui-b-container',
-      props: {
+      attr: {
         fluid: true
       },
       children: [
@@ -28,14 +28,14 @@ export default Ember.Route.extend({
               children: [
                 {
                   type: 'ui-b-button',
-                  props: {
+                  attr: {
                     style: "primary",
                     title: "Button 1"
                   },
                 },
                 {
                   type: 'ui-b-button',
-                  props: {
+                  attr: {
                     style: "info",
                     title: "Button 2"
                   },
@@ -50,28 +50,28 @@ export default Ember.Route.extend({
                 },
                 {
                   type: 'ui-b-button',
-                  props: {
+                  attr: {
                     style: "success",
                     title: "Muh"
                   },
                 },
                 {
                   type: 'ui-b-button',
-                  props: {
+                  attr: {
                     style: "success",
                     title: "Muh"
                   },
                 },
                 {
                   type: 'ui-b-button',
-                  props: {
+                  attr: {
                     style: "success",
                     title: "Muh"
                   },
                 },
                 {
                   type: 'ui-b-button',
-                  props: {
+                  attr: {
                     style: "success",
                     title: "Muh"
                   },

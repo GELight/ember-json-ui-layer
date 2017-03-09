@@ -1,5 +1,5 @@
-<button type="button" class="btn btn-{{if data.props.style data.props.style}}" {{action 'click'}}>
-    {{data.props.title}}
+<button type="button" class="btn btn-{{if style style}}" {{action 'click'}}>
+    {{title}}
 
     {{#each children as |component|}}
       {{component component.type data=component}}
