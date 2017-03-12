@@ -1,7 +1,5 @@
-<div class="ui-base">
-
+{{#if children}}
 	{{#each children as |component|}}
 		{{component component.type data=component}}
 	{{/each}}
-	
-</div>
+{{/if}}

@@ -1,8 +1,11 @@
-<button type="button" class="btn btn-{{if style style}}" {{action 'click'}}>
+<button type="button" class="{{cssClass}}" {{action 'click'}}>
+    
     {{title}}
 
-    {{#each children as |component|}}
-      {{component component.type data=component}}
-    {{/each}}
+    {{#if children}}
+      {{#each children as |component|}}
+        {{component component.type data=component}}
+      {{/each}}
+    {{/if}}
 
 </button>

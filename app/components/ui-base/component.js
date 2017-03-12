@@ -12,6 +12,7 @@ export default Ember.Component.extend({
 
   /**
    * Defines the child component list of this component to be render
+   * This is a computed property depends on the "data" property.
    *
    * @property {object} children Computed property based on property 'content'.
    * @default null
@@ -33,7 +34,7 @@ export default Ember.Component.extend({
    * @default false
    */
   debug: false,
-
+  
   /**
    * Set all 
    * 
@@ -46,7 +47,6 @@ export default Ember.Component.extend({
     let attr = this.get('data.attr');
 
     Ember.$.each(attr, (index, attr) => {
-      console.log(index, attr);
       this.set(index, attr);
     });
     

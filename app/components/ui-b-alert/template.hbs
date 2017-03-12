@@ -1,6 +1,10 @@
-<div class="container{{if fluid '-fluid'}}">
-	
-	{{#if children}}
+<div class="{{cssClass}}">
+  
+	{{#if messageHTMLSafe}}
+		{{messageHTMLSafe}}
+	{{/if}}
+		
+  {{#if children}}
 		{{#each children as |component|}}
 			{{component component.type data=component}}
 		{{/each}}
