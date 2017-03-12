@@ -3,40 +3,15 @@ import Ember from 'ember';
 export default Ember.Component.extend({
 
   /**
-   * Defines the general content data of this component
+   * Defines the general component data of this component
    *
    * @property {object} data
    * @default null
    */
   data: null,
-
-  /**
-   * Defines the child component list of this component to be render
-   * This is a computed property depends on the "data" property.
-   *
-   * @property {object} children Computed property based on property 'content'.
-   * @default null
-   */
-  children: Ember.computed('data', function() {
-    let c = this.get('data');
-
-    if (!Ember.isEmpty(c) && !Ember.isEmpty(c.children)) {
-      return c.children;
-    }
-    
-    return null;
-  }),
   
   /**
-   * Defines a debugging flag to render some internal component information
-   *
-   * @property {boolean} debug
-   * @default false
-   */
-  debug: false,
-  
-  /**
-   * Set all 
+   * Set all component data properties
    * 
    * @method didReceiveAttrs
    * @returns none
@@ -44,24 +19,12 @@ export default Ember.Component.extend({
   didReceiveAttrs() {
     this._super(...arguments);
     
-    let attr = this.get('data.attr');
+    let properties = this.get('data');
 
-    Ember.$.each(attr, (index, attr) => {
-      this.set(index, attr);
+    Ember.$.each(properties, (index, property) => {
+      this.set(index, property);
     });
     
-  },
-  
-  /**
-   * Defines all action methods for this component
-   *
-   * @property {object} actions
-   * @default {}
-   */
-  actions: {
-
-    //...
-
   }
 
 });

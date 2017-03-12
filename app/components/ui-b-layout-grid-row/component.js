@@ -16,16 +16,6 @@ export default uiBase.extend({
    * @property cssClass
    * @default row
    */
-  cssClass: 'row',
+  cssClass: 'row'
   
-  /**
-   * Defines all action methods for this component
-   *
-   * @property {object} actions
-   * @default {}
-   */
-  actions: {
-
-  }
-
 });

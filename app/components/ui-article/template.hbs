@@ -1,0 +1,21 @@
+<article class="{{cssClass}}">
+  
+	{{#if header}}
+		<header>{{header}}</header>
+	{{/if}}
+	
+  {{#if intro}}
+		<p>{{intro}}</p>
+	{{/if}}
+
+  {{#if text}}
+		<div>{{text}}</div>
+	{{/if}}
+  
+  {{#if children}}
+    {{#each children as |component|}}
+      {{component component.type data=component}}
+    {{/each}}
+  {{/if}}
+  
+</article>

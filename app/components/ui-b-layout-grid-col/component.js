@@ -16,16 +16,6 @@ export default uiBase.extend({
    * @property cssClass
    * @default col
    */
-  cssClass: 'col',
-  
-  /**
-   * Defines all action methods for this component
-   *
-   * @property {object} actions
-   * @default {}
-   */
-  actions: {
-
-  }
+  cssClass: 'col'
 
 });

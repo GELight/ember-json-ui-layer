@@ -8,16 +8,6 @@ export default uiBase.extend({
    * @property tagName
    * @default div
    */
-  tagName: '',
-
-  /**
-   * Defines all action methods for this component
-   *
-   * @property {object} actions
-   * @default {}
-   */
-  actions: {
-
-  }
-
+  tagName: ''
+  
 });
