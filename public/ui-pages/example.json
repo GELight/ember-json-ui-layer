@@ -5,48 +5,48 @@
     "attr": {},
     "children": [
       {
-        "class": "ui-b-layout-container",
+        "type": "ui-b-layout-container",
         "children": [
           {
-            "class": "ui-layout-section",
+            "type": "ui-layout-section",
             "children": [
               {
-                "class": "ui-b-layout-grid-row",
+                "type": "ui-b-layout-grid-row",
                 "children": [
                   {
-                    "class": "ui-b-layout-grid-col",
+                    "type": "ui-b-layout-grid-col",
                     "col": "col-md-6",
                     "children": [
                       {
-                        "class": "ui-b-alert",
+                        "type": "ui-b-alert",
                         "message": "This an <strong>alert message</strong> with html...",
                         "cssClass": "alert alert-warning",
                         "children": [
                           {
-                            "class": "ui-b-button",
+                            "type": "ui-b-button",
                             "cssClass": "btn btn-primary",
                             "title": "Button 1"
                           }
                         ]
                       },
                       {
-                        "class": "ui-b-button",
+                        "type": "ui-b-button",
                         "cssClass": "btn btn-primary",
                         "title": "Button 123"
                       }
                     ]
                   },
                   {
-                    "class": "ui-b-layout-grid-col",
+                    "type": "ui-b-layout-grid-col",
                     "col": "col-md-6",
                     "children": [
                       {
-                        "class": "ui-b-button",
+                        "type": "ui-b-button",
                         "cssClass": "btn btn-success",
                         "title": "Muh"
                       },
                       {
-                        "class": "ui-article",
+                        "type": "ui-article",
                         "cssClass": "alert alert-success",
                         "header": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
                         "intro": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
