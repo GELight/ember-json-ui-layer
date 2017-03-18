@@ -1,9 +1,5 @@
-<section>
-	
-  {{#if children}}
-    {{#each children as |component|}}
-      {{component component.class data=component}}
-    {{/each}}
-  {{/if}}
-  
-</section>
+{{#if children}}
+  {{#each children as |component|}}
+    {{component component.class data=component}}
+  {{/each}}
+{{/if}}

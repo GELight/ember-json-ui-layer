@@ -19,11 +19,23 @@ export default Ember.Component.extend({
   didReceiveAttrs() {
     this._super(...arguments);
     
-    let properties = this.get('data');
+    if (!Ember.isEmpty(this.get('data'))) {
+      
+      // Set all defined properties to the component
+      let properties = this.get('data');
+      Ember.$.each(properties, (index, property) => {
+        this.set(index, property);
+      });
 
-    Ember.$.each(properties, (index, property) => {
-      this.set(index, property);
-    });
+      // Set all defined attributes to the component
+      if (!Ember.isEmpty(this.get('data.attr'))) {
+        let attr = this.get('data.attr');
+        Ember.$.each(attr, (index, property) => {
+          this.set(index, property);
+        });
+      }
+      
+    }
     
   }
 
