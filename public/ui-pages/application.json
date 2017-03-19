@@ -8,21 +8,24 @@
         "class": "ui-b-button",
         "attr": {
           "cssClass": "btn btn-primary",
-          "title": "Index"
+          "title": "To Index",
+          "transition": "index"
         }
       },
       {
         "class": "ui-b-button",
         "attr": {
           "cssClass": "btn btn-info",
-          "title": "Page 1"
+          "title": "To Page 1",
+          "transition": "page1"
         }
       },
       {
         "class": "ui-b-button",
         "attr": {
           "cssClass": "btn btn-success",
-          "title": "Page 2"
+          "title": "To Page 2",
+          "transition": "page2"
         }
       }
     ]
