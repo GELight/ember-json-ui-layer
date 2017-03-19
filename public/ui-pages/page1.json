@@ -20,8 +20,9 @@
               {
                 "class": "ui-b-button",
                 "attr": {
-                  "cssClass": "btn btn-primary",
-                  "title": "Button 1"
+                  "cssClass": "btn btn-link",
+                  "title": "To Page 2",
+                  "transition": "page2"
                 }
               }
             ]

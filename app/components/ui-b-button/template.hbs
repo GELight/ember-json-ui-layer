@@ -1,11 +1,29 @@
-<button type="button" class="{{cssClass}}" {{action 'click'}}>
+{{#if transition}}
+
+  {{#link-to transition class=cssClass}}
     
-  {{title}}
+    {{title}}
 
-  {{#if children}}
-    {{#each children as |component|}}
-      {{component component.class data=component}}
-    {{/each}}
-  {{/if}}
+    {{#if children}}
+      {{#each children as |component|}}
+        {{component component.class data=component}}
+      {{/each}}
+    {{/if}}
 
-</button>
+  {{/link-to}}
+
+{{else}}
+
+  <button type="button" class="{{cssClass}}" {{action 'click'}}>
+      
+    {{title}}
+
+    {{#if children}}
+      {{#each children as |component|}}
+        {{component component.class data=component}}
+      {{/each}}
+    {{/if}}
+
+  </button>
+
+{{/if}}
