@@ -1,0 +1,33 @@
+{
+  "uiPage": {
+    "id": "page1",
+    "class": "ui-page",
+    "attr": {},
+    "children": [
+      {
+        "class": "ui-b-layout-container",
+        "attr": {
+          "fluid": true
+        },
+        "children": [
+          {
+            "class": "ui-b-alert",
+            "attr": {
+              "message": "This an <strong>alert message</strong> with html...",
+              "cssClass": "alert alert-warning"
+            },
+            "children": [
+              {
+                "class": "ui-b-button",
+                "attr": {
+                  "cssClass": "btn btn-primary",
+                  "title": "Button 1"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

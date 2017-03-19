@@ -5,77 +5,25 @@
     "attr": {},
     "children": [
       {
-        "class": "ui-b-layout-container",
+        "class": "ui-b-button",
         "attr": {
-          "fluid": false
-        },
-        "children": [
-          {
-            "class": "ui-layout-section",
-            "children": [
-              {
-                "class": "ui-b-layout-grid-row",
-                "children": [
-                  {
-                    "class": "ui-b-layout-grid-col",
-                    "attr": {
-                      "col": "col-md-6"
-                    },
-                    "children": [
-                      {
-                        "class": "ui-b-alert",
-                        "attr": {
-                          "message": "This an <strong>alert message</strong> with html...",
-                          "cssClass": "alert alert-warning"
-                        },
-                        "children": [
-                          {
-                            "class": "ui-b-button",
-                            "attr": {
-                              "cssClass": "btn btn-primary",
-                              "title": "Button 1"
-                            }
-                          }
-                        ]
-                      },
-                      {
-                        "class": "ui-b-button",
-                        "attr": {
-                          "cssClass": "btn btn-primary",
-                          "title": "Button 123"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "class": "ui-b-layout-grid-col",
-                    "attr": {
-                      "col": "col-md-6"
-                    },
-                    "children": [
-                      {
-                        "class": "ui-b-button",
-                        "attr": {
-                          "cssClass": "btn btn-success",
-                          "title": "Muh"
-                        }
-                      },
-                      {
-                        "class": "ui-article",
-                        "attr": {
-                          "cssClass": "alert alert-success",
-                          "header": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr",
-                          "intro": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-                          "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-                        }
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
+          "cssClass": "btn btn-primary",
+          "title": "Index"
+        }
+      },
+      {
+        "class": "ui-b-button",
+        "attr": {
+          "cssClass": "btn btn-info",
+          "title": "Page 1"
+        }
+      },
+      {
+        "class": "ui-b-button",
+        "attr": {
+          "cssClass": "btn btn-success",
+          "title": "Page 2"
+        }
       }
     ]
   }
