@@ -1,6 +1,6 @@
 {
   "uiPage": {
-    "id": "index",
+    "id": "application",
     "class": "ui-page",
     "attr": {},
     "children": [
